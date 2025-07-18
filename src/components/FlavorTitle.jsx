@@ -41,8 +41,8 @@ const FlavorTitle = () => {
   //   });
   // });
   return (
-    <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
-      <div className="overflow-hidden 2xl:py-0 py-3 first-text-split relative md:top-4 top-6">
+    <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16 z-11">
+      <div className="overflow-hidden 2xl:py-0 py-3 first-text-split relative md:top-4 top-6 z-10">
         <h1>We have 6</h1>
       </div>
 
@@ -57,7 +57,7 @@ const FlavorTitle = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden 2xl:py-0 py-3 second-text-split">
+      <div className="overflow-hidden 2xl:py-0 py-3 second-text-split z-5">
         <h1>delicious flavors</h1>
       </div>
     </div>

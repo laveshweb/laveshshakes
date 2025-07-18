@@ -24,7 +24,7 @@ const Footer = () => {
 
       {isMobile ? (
         <img
-          src="/images/.png"
+          // src="/images/.png"
           className=" top-0 object-contain"
         />
       ) : (
