@@ -211,9 +211,11 @@ body::-webkit-scrollbar {
     .fourth-title {
       @apply rotate-[0deg] md:-translate-y-14 ;
     }
-
+    .vd-card {
+      @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk;
+    }
     .vd-pin-section {
-      @apply md:h-[110vh] h-dvh overflow-hidden mb-5;
+      @apply md:h-[150vh] h-dvh overflow-hidden mb-5;
 
       video {
         @apply size-full absolute inset-0 object-cover;

@@ -29,16 +29,29 @@ const Testi = () => {
   }, { scope: containerRef });
    
   return (
-    <section>
-    <div 
+    <section className="flex flex-col md:flex-row h-screen">
+    {/* Left Side - Text */}
+    <div
       ref={containerRef}
-    className=" md:text-[150px] text-[80px]  font-extrabold  col-center relative right-1">
-        <h1 className="text-black first-title mb-[-30px] ">What's</h1>
+      className="md:text-[150px] text-[80px] md:w-1/2 w-full flex flex-col justify-center items-center md:items-start px-6 md:px-12 relative md:left-7 left-0 "
+    >
+       <h1 className="text-black first-title mb-[-30px]  ">What's</h1>
         <h1 className="text-light-brown sec-title mb-[-20px] ">Everyone</h1>
         <h1 className="text-black third-title text-14xl ">Talking</h1>
-     </div>
-   
-   
+    </div>
+
+    {/* Right Side - Video Card */}
+    <div className="md:w-1/2 w-full flex justify-center items-center relative md:right-5 -right-2  min-h-[400px] md:mt-4 mt-12">
+      <div className="w-[60%] md:w-[55%]  ">
+        <video
+          className="w-full md:h-[580px] h-[450px] rounded-3xl shadow-xl border-2 border-gray-300 transition-transform duration-300 hover:scale-105 object-cover "
+          src="public\videos\f7.mp4"
+          autoPlay
+          muted
+          loop
+        ></video>
+      </div>
+    </div>
   </section>
   )
 }
